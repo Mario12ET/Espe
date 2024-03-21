@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para la mas guapota</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkling 1s infinite;
+        }
+
+        @keyframes twinkling {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #add8e6;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:hover span {
+            display: none;
+        }
+
+        .btn:hover::after {
+            content: "Te amo nacota si lees esto me debes unos besotes";
+        }
+    </style>
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="star" style="top: 10%; left: 10%;"></div>
+    <div class="star" style="top: 20%; left: 30%;"></div>
+    <div class="star" style="top: 30%; left: 50%;"></div>
+    <div class="star" style="top: 40%; left: 70%;"></div>
+    <div class="star" style="top: 50%; left: 90%;"></div>
+    <div class="star" style="top: 60%; left: 20%;"></div>
+    <div class="star" style="top: 70%; left: 40%;"></div>
+    <div class="star" style="top: 80%; left: 60%;"></div>
+    <div class="star" style="top: 90%; left: 80%;"></div>
+    
+    <!-- Text "xd" -->
+    <div class="container">
+        <center>
+        <h3>Te amo mucho muchote mi cielito yyy felices 6 meses mi amorrr vamos por más kasakjs te amote 
+        </h3>
+        <h6>(hice esta pagina en 2 horas no esperes mucho y las flores estan 2/3)</h6>
+        </div>
+</center>
+    <!-- Button -->
+    <div class="container">
+        <button class="btn" onclick="window.location.href='flores.html'"><span>Te amo, presiona aquí porfi</span></button>
+    </div>
+</body>
+</html>
